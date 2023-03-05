@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contato</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+		}
+
+		header {
+			background-color: #ff5722;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: 20px auto;
+		}
+
+		form {
+			margin: 20px 0;
+			padding: 20px;
+			background-color: #f5f5f5;
+			border-radius: 5px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: none;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+		}
+
+		input[type="submit"] {
+			display: block;
+			background-color: #ff5722;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #e64a19;
+		}
+
+		.botao {
+			display: inline-block;
+			padding: 12px 24px;
+			background-color: #FFD200;
+			color: #333;
+			font-size: 18px;
+			text-decoration: none;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+			transition: background-color 0.2s, box-shadow 0.2s;
+		}
+
+		.botao:hover {
+			background-color: #F0B800;
+			box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Venda de Tupperware</h1>
+	</header>
+	<div class="container">
+		<img src="https://cf.shopee.com.br/file/689702a8b94787f6db269d92bf51134c" alt="Produtos Tupperware"
+			style="width:50%;">
+		<p>Aproveite nossa promoção exclusiva de Tupperware! Nossos produtos são duráveis, fáceis de usar e estão
+			disponíveis em uma variedade de cores e designs. Com a Tupperware, você pode organizar sua cozinha e ter mais
+			praticidade no seu dia a dia.</p>
+		<form>
+			<label for="name">Nome:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="phone">Telefone:</label>
+			<input type="tel" id="phone" name="phone" required>
+			<label for="message">Mensagem:</label>
+			<textarea id="message" name="message"></textarea>
+			<input type="submit" value="Enviar">
+		</form>
+		<a href="./index.html" class="botao">Voltar</a>
+	</div>
+</body>
+
+</html>

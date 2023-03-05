@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Como Comprar | Tupperware</title>
+  <style>
+    /* Estilos globais */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F5F5F5;
+      color: #555;
+    }
+
+    /* Estilos do cabeçalho */
+    header {
+      background-color: #F44336;
+      padding: 20px;
+      text-align: center;
+      color: #FFF;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    nav {
+      background-color: #333;
+      color: #FFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    /* Estilos do conteúdo principal */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+    /* Estilos do formulário */
+    form {
+      background-color: #FFF;
+      border: 1px solid #E0E0E0;
+      border-radius: 10px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+      width: 500px;
+    }
+
+    form label {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+      border: 1px solid #E0E0E0;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    form button[type="submit"] {
+      background-color: #F44336;
+      border: none;
+      border-radius: 5px;
+      color: #FFF;
+      display: block;
+      font-size: 18px;
+      margin-top: 20px;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.2s ease-in-out;
+      width: 100%;
+    }
+
+    form button[type="submit"]:hover {
+      background-color: #FF5722;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD200;
+      color: #333;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s, box-shadow 0.2s;
+    }
+
+    .botao:hover {
+      background-color: #F0B800;
+      box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Como Comprar</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./produtos.html">Produtos</a></li>
+      <li><a href="./como_comprar.html">Como Comprar</a></li>
+      <li><a href="./sobre.html">Sobre</a></li>
+      <li><a href="./contato.html">Contato</a></li>
+    </ul>
+    <a href="#">Consultora</a>
+  </nav>
+  <main>
+    <form>
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+      </br>
+      <a href="./index.html" class="botao">Voltar</a>
+    </form>
+  </main>
